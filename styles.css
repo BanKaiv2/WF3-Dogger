@@ -1,0 +1,188 @@
+/* ELEMENT PREDEFINIS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  /* background */
+  --background-header: #999999;
+  --background-main: #f8f9fa;
+  --background-footer: #4a4a4b;
+
+  /* color */
+  --color-text-white: #ffffff;
+  --color-text-green: #a2c0be;
+  --color-text-black: #000000;
+  --color-text-grey: #999999;
+
+  /* background-btn & shadow*/
+  --background-color-btn: #567876;
+
+  /* color element brand */
+  --color-brand: #ff9900;
+}
+
+/*====== CORPS DE LA PAGE ======*/
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*====== HEADER ======*/
+
+header {
+  background-color: var(--background-main);
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  padding: 15px 0 15px 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-text-black);
+}
+
+.logo span {
+  color: var(--color-brand);
+}
+
+#menu nav ul {
+  list-style: none; /* Enleve les points*/
+  display: flex; /* Mets en ligne par defaut (flex-direction=row*/
+  gap: 30px;
+}
+
+#menu nav ul li a {
+  color: var(--color-text-grey);
+  text-decoration: none; /* Enleve le soulignement des liens */
+  transition: color 350ms;
+}
+
+#menu nav ul li a:hover{
+  color: black;
+  transition: color 350ms;
+  font-weight: 600;
+}
+
+/* Titre, solgan et image */
+
+body header section {
+  display: flex;
+  justify-content: space-between; /* centrage horizontale*/
+  width: 60%;
+  margin: auto;
+  align-items: center; /* centrage verticale*/
+}
+
+.slogan {
+  padding: 0;
+  margin: 0;
+}
+
+.slogan h1 {
+  font-weight: lighter; /* écriture fine */
+  font-size: 4rem;
+  margin: 0; /* Suppression des marges auto. sur la balise heading*/
+}
+
+.slogan p {
+  font-weight: lighter;
+  margin: 0;
+  padding: 5px;
+  color: var(--color-text-grey);
+}
+
+/* Largeur de l'image contenu dans le header */
+body header section img {
+  width: 35%; /* juste changer la hauteur ou largeur garde le ratio de la photo*/
+}
+
+/* ====== MAIN ======  */
+
+main {
+  background-color: white;
+}
+
+.first-main {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+  width: 25%;
+}
+
+.first-main h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.first-main p {
+  color: var(--color-text-grey);
+}
+
+/* ====== CARDS ======  */
+
+.cards-flex {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 40px;
+  text-align: end;
+}
+
+section .cards-flex:nth-child(even){
+  text-align: initial;
+}
+
+.cards-flex h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cards-flex p {
+  color: var(--color-text-grey);
+}
+
+.cards-flex a {
+  border: 1px solid;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: var(--color-text-green);
+  color: white;
+  display: inline-block;
+  transition: background-color 350ms;
+}
+
+.cards-flex a:hover{
+  background-color: black;
+  transition: background-color 350ms;
+}
+
+.pictures {
+  height: 250px;
+  box-shadow: 5px 5px 1px var(--color-text-green);
+}
+
+.paragraph{
+  width: 30%;
+  padding: 50px;
+}
+
+/* ====== FOOTER ======  */
+
+footer {
+  width: 100%;
+  background-color: var(--background-footer);
+  color: var(--color-text-white);
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
